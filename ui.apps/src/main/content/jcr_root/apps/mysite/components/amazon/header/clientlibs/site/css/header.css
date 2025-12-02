@@ -1,0 +1,86 @@
+/* Full header background */
+.cmp-header {
+    background-color: #fff; /* GitHub dark gray */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+
+/* Logo */
+.cmp-header__logo-image {
+    height: 8vh;
+    width: 10vw;
+}
+
+/* Center area container (Search + Menu) */
+.cmp-header__center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search Box */
+.cmp-header__search-input {
+    height: 32px;
+    width: 25vw;
+    border-radius: 4px;
+    border: 2px solid #d1d5da; /* GitHub light gray */
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/* Search input focus */
+.cmp-header__search-input:focus {
+    outline: none;
+    border: 2px solid #0366d6; /* GitHub blue */
+}
+
+/* Navigation items */
+.cmp-header__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.cmp-header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cmp-header__nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Right-side buttons */
+.cmp-header__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cmp-header__btn {
+    padding: 6px 14px;
+    border: 1px solid #c5d1de;
+    border-radius: 6px;
+    background: #adadad;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cmp-header__btn:hover {
+    background-color: #444c56;
+    transform: scale(1.08);
+    transform-origin: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    color : #fff;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.bt-search-btn i {
+    font-size: 18px;
+}

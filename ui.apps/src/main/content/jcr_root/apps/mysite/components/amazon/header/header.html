@@ -1,0 +1,39 @@
+<div class="cmp-header">
+
+    <!-- Left: LOGO -->
+    <div class="cmp-header__logo">
+        <img class="cmp-header__logo-image" src="${properties.logo}" alt="Logo">
+    </div>
+
+    <!-- Center: SEARCH + NAVIGATION -->
+    <div class="cmp-header__center">
+
+        <!-- Search box -->
+        <div class="cmp-header__search" data-sly-test="${properties.enableSearch}">
+            <input class="cmp-header__search-input" type="text" placeholder="Search..."/>
+             <button class="bt-search-btn">🔍</button>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="cmp-header__nav-list">
+                <li data-sly-repeat.item="${model.navigationItems}">
+                    <a class="cmp-header__nav-link" href="${item.link}">${item.title}</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- Right: Login / Logout -->
+    <div class="cmp-header__right" data-sly-test="${properties.enableLogin}">
+        <button class="cmp-header__btn" onclick="window.location.href='https://www.amazon.in/ap/signin'">
+            Sign in
+        </button>
+
+        <button class="cmp-header__btn" onclick="window.location.href='https://www.amazon.in/ap/signin'">
+            Sign up
+        </button>
+    </div>
+
+</div>
